@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.social-buttons {
+    position: fixed;
+    bottom: 30px; /* Mover los botones más abajo */
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Asegurar que los botones estén siempre al frente */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* Cambiar a círculo */
+    width: 60px; /* Definir tamaño del botón */
+    height: 60px; /* Definir tamaño del botón */
+    justify-content: center; /* Centrar ícono */
+    position: relative; /* Necesario para el pseudo-elemento */
+    transition: background-color 0.3s ease;
+}
+
+.social-button .icon {
+    font-size: 32px; /* Aumentar el tamaño del icono */
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover .icon {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.email {
+    background-color: #0072c6; /* Color azul similar al de Outlook */
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+/* Estilos para el texto emergente de WhatsApp */
+.popup-text {
+    position: absolute;
+    left: 70px; /* Posicionar el texto a la derecha del botón */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white; /* Fondo blanco */
+    color: #25d366; /* Color del texto */
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    white-space: nowrap; /* Evitar que el texto se divida en líneas */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 16px; /* Ajustar el tamaño del texto */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Añadir una sombra para mejor visibilidad */
+    pointer-events: none;
+    z-index: -1; /* Asegurar que esté detrás del botón */
+}
+
+.show-text {
+    opacity: 1;
+    transform: translateY(-50%) translateX(10px);
+    z-index: 1001; /* Mostrar el texto por encima del botón */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .social-buttons {
+        bottom: 30px; /* Subir los botones para que no los tape el menú */
+        right: 10px; /* Mover los botones más a la izquierda */
+        display: flex; /* Asegurar que los botones se muestren en móviles */
+    }
+
+    .social-button {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .social-button .icon {
+        font-size: 40px;
+    }
+
+    .social-button:hover .icon {
+        transform: none;
+    }
+
+    .popup-text {
+        display: none; /* No mostrar el texto emergente en móviles */
+    }
+
+    .whatsapp-popup {
+        left: 10px;
+        bottom: 30px; /* Ajustar esta propiedad para bajar el botón en móviles */
+    }
+}
+
+/* Asegurar que los botones estén siempre al frente */
+.social-buttons, .whatsapp-popup {
+    z-index: 10000;
+}
+
+/* Posicionamiento fijo para el botón de WhatsApp */
+.whatsapp-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    z-index: 1000; /* Asegurar que el botón de WhatsApp esté al frente */
+    display: flex;
+    align-items: center;
+}
