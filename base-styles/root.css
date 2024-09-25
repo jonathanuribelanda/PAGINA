@@ -1,0 +1,36 @@
+:root {
+    --dark-jungle-green: #0D1B1E ;
+    --outer-space-crayola: #0C2E35;
+    --beau-blue: #BFD7EA;
+    --beau-blue-37: #BFD7EA5E;
+    --beau-blue-50: #BFD7EA80;
+    --beau-blue-80: #BFD7EACC;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    width: 100%;
+    min-width: 320px;
+}
+
+.desktop-warning {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: 98vh;
+}
+.desktop-warning img {
+    width: 30vw;
+}
+.desktop-warning h2 {
+    width: 50vw;
+    font-size: 3vw;
+}

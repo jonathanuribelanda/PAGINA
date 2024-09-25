@@ -1,0 +1,32 @@
+header {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+    width: 100%;
+    min-width: 320px;
+    height: 75px;
+    background-color: var(--beau-blue);
+}
+.header-logoAnchor-image {
+    height: 80px;
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 90px;
+    }
+    .header-logoAnchor-image {
+        height: 90px;
+    }
+}
+@media (min-width: 1280px) {
+    header {
+        height: 128px;
+    }
+    .header-logoAnchor-image {
+        height: 128px;
+    }
+}
