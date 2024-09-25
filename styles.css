@@ -1,0 +1,979 @@
+/*  Main title*/
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vw;
+    max-height: calc(100vh - 150px);
+    background-size: cover;
+    background-origin: center;
+    background-color: #b1b1b1;
+    animation: slideBackground 25s cubic-bezier(0, 0, 0, 0.99) infinite 0s;;
+    animation-timing-function: cubic-bezier(0.82, 0.02, 0.13, 1.01);
+}
+/*  Slide animation of the main title*/
+@keyframes slideBackground {
+    0% {
+        background-image: url(./assets/img/instalations-1.jpg);
+    }
+    25% {
+        background-image: url(./assets/img/instalations-2.jpg);
+    }
+    50% {
+        background-image: url(./assets/img/instalations-3.jpg);
+    }
+    75% {
+        background-image: url(./assets/img/instalations-4.jpg);
+    }
+    100% {
+        background-image: url(./assets/img/instalations-1.jpg);
+    }
+}
+.mainTitle-text {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 30.48px;
+    text-align: center;
+    color: #FFF;
+
+    /*text-shadow: 0px 4px 4px #000;*/
+}
+/*  aboutUs Section*/
+.aboutUs {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    min-height: 370px;
+    background-color: #BFD7EA7E;
+}
+.aboutUs-titleContainer-L4,
+.aboutUs-titleContainer-L3,
+.aboutUs-titleContainer-L2,
+.aboutUs-titleContainer-L1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    border-radius: 100%;
+    background-color: #0C2E3599;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.aboutUs-titleContainer-L4 {
+    left: -190px;
+    height: 370px;
+    padding: 0;
+    width: 370px;
+    background-color: #0C2E35E6;
+}
+.aboutUs-titleContainer-L3 {
+    height: 330px;
+    width: 330px;
+}
+.aboutUs-titleContainer-L2 {
+    height: 275px;
+    width: 275px;
+}
+.aboutUs-titleContainer-L1 {
+    height: 230px;
+    width: 230px;
+}
+.aboutUs-titleContainer-text {
+    position: relative;
+    left: 125px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #FFF;
+}
+.aboutUs-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(100vw - 180px);
+    padding: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 15.85px;
+}
+.aboutUs-info-cards-display {
+    display: none;
+}
+.aboutUs-info-anchor {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 120px;
+    height: 27px;
+    border: #FFF solid 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #DFEBF5 ;
+
+    box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.30);
+} 
+
+/*  Donations*/
+.donations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    min-height: 600px;
+}
+.donations-backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.donations {
+    position: relative;
+}
+.donations-flyer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    position: absolute;
+    z-index: 2;
+    height: calc(80vh - 150px);
+    min-height: 445px;
+    width: 80%;
+    background-color: #BFD7EACC;
+}
+.donations-flyer-title {
+    width: 90%;
+    height: 40px;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: var(--dark-jungle-green);
+    border-radius: 7px;
+    color: #FFF;
+    text-align: center;
+}
+.donations-flyer-container-image {
+    height: 180px;
+
+    animation: donationsInformationFadeIn 800ms 1;
+}
+.donations-flyer-container-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 185px;
+    text-align: center;
+    animation: donationsInformationFadeIn 800ms 1;
+}
+@keyframes donationsInformationFadeIn{
+    0%{
+        opacity: 0%;
+    }
+}
+.donations-flyer-container-information-paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.donations-flyer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    cursor: pointer;
+}
+.donations-flyer-buttons-button-1 {
+    width: 110px;
+    height: 105px;
+    background-image: url(./assets/icon/paypal-icon.svg);
+    background-color: var(--dark-jungle-green);
+    border-radius: 100%;
+    background-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.donations-flyer-buttons-button-2 {
+    width: 110px;
+    height: 105px;
+    background-image: url(./assets/icon/bbva-icon.svg);
+    background-color: var(--dark-jungle-green);
+    border-radius: 100%;
+    background-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.donations-flyer-paragraph {
+    position: absolute;
+    top: 90%;
+    z-index: 2;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*  Information*/
+.info-title {
+    position: relative;
+    height: 120px;
+}
+.rectangle-1 {
+    position: absolute;
+    width: 65%;
+    height: 120px;
+    background-color: rgba(17, 32, 48, 0.7);
+}
+.rectangle-2 {
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - (65vw / 2));
+    width: 68.5%;
+    height: 92px;
+    background-color: rgba(22, 62, 70, 0.7);
+}
+.rectangle-3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 55%;
+    height: 36px;
+    background-color: rgba(191, 215, 234, 0.7);
+}
+.info-title-text {
+    position: absolute;
+    top: 48px;
+    left: 18%;
+    z-index: 2;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #FFF;
+}
+.info-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 125px;
+    background-color: var(--outer-space-crayola);
+}
+.info-text-paragraph {
+    margin: auto 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+.info-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--beau-blue);
+}
+.info-promo-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    height: 230px;
+    width: 40vw;
+}
+.info-promo-button-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--outer-space-crayola);
+}
+.info-promo-button-division {
+    width: 230px;
+    height: 3px;
+    background-color: var(--dark-jungle-green);
+    transition: 500ms;
+}
+
+/*  Residents-promotion*/
+.residents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 160px;
+    width: 100%;
+    background-color: var(--outer-space-crayola);
+}
+.residents-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24.48px;
+    color: #FFF;
+}
+.residents-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 38px;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 18px;
+    background-color: #69BC28;
+}
+
+/*  Extras*/
+.extras-directions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 680px;
+}
+.extras-directions-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+.extras-directions {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media (min-width: 440px) {
+    .residents-title {
+        font-size: 2.5rem;
+        line-height: 35px;
+    }
+}
+@media (min-width: 580px) {
+    .aboutUs-info-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+    .donations-flyer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        font-size: 3.8rem;
+    }
+    .donations-flyer-buttons-button-1 {
+        width: 125px;
+        height: 125px;
+    }
+    .donations-flyer-buttons-button-2 {
+        width: 125px;
+        height: 125px;
+    }
+    .donations-flyer-container-image {
+        height: 25vh;
+    }
+    .donations-flyer-container-information {
+        height: 25vh;
+    }
+    .donations-flyer-container-information-paragraph {
+        font-size: 2rem;
+    }
+    .info-title-text {
+        font-size: 3.4rem;
+    }
+    .info-text-paragraph {
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 640px) {
+    .mainTitle-text {
+        font-size: 4rem;
+        line-height: 48px;
+    }
+    .aboutUs-titleContainer-L4 {
+        left: -100px;
+    }
+    .aboutUs-info {
+        width: calc(100vw - 270px);
+    }
+    .aboutUs-titleContainer-text {
+        font-size: 3.4rem;
+        left: 40px;
+    }
+    .aboutUs-titleContainer-L3,
+    .aboutUs-titleContainer-L2,
+    .aboutUs-titleContainer-L1 {
+        padding-right: 0;
+    }
+    .donations-flyer-paragraph {
+        font-size: 1.5rem;
+    }
+    .info-title-text {
+        font-size: 3.4rem;
+    }
+    .info-text-paragraph {
+        font-size: 1.6rem;
+    }
+    .info-promo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .info-promo-button {
+        width: 40vw;
+    }
+}
+@media (min-width: 768px) {
+    .mainTitle-text {
+        font-size: 4.4rem;
+    }
+    .aboutUs-info-paragraph {
+        font-size: 2rem;
+    }
+    .aboutUs-info {
+        align-items: center;
+    }
+    .aboutUs-info-anchor {
+        width: 130px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .mainTitle {
+        max-height: calc(100vh - 90px);
+    }
+    .mainTitle-text {
+        font-size: 5.4rem;
+        line-height: 70px;
+    }
+    @keyframes slideBackground {
+        0% {
+            background-origin: bottom;
+            background-image: url(./assets/img/bg-slide-1.jpg);
+        }
+        25% {
+            background-origin: bottom;
+            background-image: url(./assets/img/bg-slide-2.jpg);
+        }
+        50% {
+            background-origin: bottom;
+            background-image: url(./assets/img/bg-slide-3.jpg);
+        }
+        75% {
+            background-origin: bottom;
+            background-image: url(./assets/img/bg-slide-4.jpg);
+        }
+        100% {
+            background-origin: bottom;
+            background-image: url(./assets/img/bg-slide-1.jpg);
+        }
+    }
+
+    .aboutUs {
+        height: 850px;
+        align-items: flex-start;
+    }
+    .aboutUs-titleContainer-L4 {
+        left: -10px;
+        top: -140px;
+    }
+    .aboutUs-titleContainer-text {
+        left: 0px;
+        font-size: 4.5rem;
+    }
+    .aboutUs-info {
+        width: calc(100vw - 360px);
+    }
+    .aboutUs-info-paragraph {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+    .aboutUs-info-cards-display {
+        display: block;
+    }
+    .aboutUs-info-cards {
+        position: absolute;
+        left: 0px;
+        top: 240px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .aboutUs-info-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        width: 25vw;
+        max-width: 320px;
+        height: 500px;
+        background-color: var(--beau-blue-50);
+    }
+    .aboutUs-info-card-title {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 36.57px;
+        text-align: center;
+        color: var(--outer-space-crayola);
+    }
+    .aboutUs-info-card-division {
+        width: 75%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #FFF;
+    }
+    .aboutUs-info-card-date {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #FFF;
+    }
+    .aboutUs-info-card-photo {
+        width: 225px;
+        height: 187.5px;
+        background-position: center;
+        background-size: cover;
+    }
+    .aboutUs-info-card-paragraph {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 20px;
+    }
+    .aboutUs-info-anchor {
+        position: absolute;
+        left: calc(50% - 145px);
+        bottom: 30px;
+        width: 290px;
+        height: 55px;
+        font-size: 2.4rem;
+        border: 5px #FFF solid;
+    }
+    .info-promo-button {
+        width: 24vw;
+    }
+    .extras-directions {
+        flex-direction: row;
+        height: 250px;
+    }
+}
+@media (min-width: 1280px) {
+    .mainTitle {
+        height: calc(100vh - 128px);
+    }
+    .mainTitle-text {
+        font-size: 6.4rem;
+        line-height: 78px;
+        font-weight: 700;
+    }
+    .aboutUs {
+        height: 900px;
+    }
+    .aboutUs-titleContainer-L4 {
+        top: -195px;
+        width: 455px;
+        height: 455px;
+    }
+    .aboutUs-titleContainer-L3 {
+        width: 370px;
+        height: 370px;
+    }
+    .aboutUs-titleContainer-L2 {
+        width: 250px;
+        height: 250px;
+    }
+    .aboutUs-titleContainer-L1 {
+        width: 180px;
+        height: 180px;
+    }
+    .aboutUs-titleContainer-text {
+        font-size: 6.4rem;
+    }
+    .aboutUs-info {
+        padding-top: 50px;
+        padding-left: 25px;
+        width: calc(100vw - 455px);
+        max-width: 780px;
+    }
+    .aboutUs-info-paragraph {
+        font-size: 2.3rem;
+    }
+    .aboutUs-info-cards {
+        top: 285px;
+    }
+    .info-promo-button {
+        height: 310px;
+        max-width: 310px;
+    }
+    .info-promo-button-anchor-image {
+        width: 250px;
+    }
+    .info-promo-button-division {
+        display: none;
+    }
+    .info-promo-button-text {
+        font-size: 2.4rem;
+    }
+    .info-title {
+        height: 190px;
+    }
+    .rectangle-1 {
+        width: 720px;
+        height: 190px;
+    }
+    .rectangle-2 {
+        width: 800px;
+        height: 140px;
+        left: 100px;
+    }
+    .rectangle-3 {
+        width: 1024px;
+        height: 75px;
+    }
+    .info-title-text {
+        font-size: 6.4rem;
+    }
+    .info-text {
+        height: 180px;
+    }
+    .info-text-paragraph {
+        font-size: 2.8rem;
+    }
+    .residents {
+        height: 190px;
+    }
+    .residents-title {
+        font-size: 4rem;
+    }
+    .residents-button {
+        width: 380px;
+        height: 50px;
+        font-size: 2.8rem;
+        border-radius: 32px;
+        font-weight: 500;
+    }
+
+    .donations {
+        min-height: 720px;
+    }
+    .donations-flyer {
+        padding: 50px 0px;
+        height: 90%;
+    }
+    .donations-flyer-title {
+        font-size: 6.4rem;
+        width: 75%;
+    }
+    .donations-flyer-container-image {
+        min-height: 250px;
+    }
+    .donations-flyer-container-information {
+        min-height: 250px;
+    }
+    .donations-flyer-buttons-button-1 {
+        width: 145px;
+        height: 145px;
+    }
+    .donations-flyer-buttons-button-1 {
+        width: 145px;
+        height: 145px;
+    }
+    .extras-directions {
+        height: 365px;
+    }
+    .extras-directions {
+        font-size: 2.4rem;
+    }
+    .extras-directions-article-anchor-image {
+        height: 195px;
+    }
+}
+@media (min-width:1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutUs {
+        width: 1280px;
+    }
+    .donations {
+        width: 1280px;
+    }
+    .info {
+        width: 1280px;
+    }
+    .residents {
+        width: 1280px;
+    }
+    .extras {
+        width: 1280px;
+    }
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 94%; /* Aumentamos el ancho del contenedor en dispositivos móviles */
+  }
+  
+  .popup-content img {
+    max-width: 100%; /* Ajustamos el tamaño máximo de la imagen */
+    max-height: 80vh; /* Limitamos la altura para evitar que la imagen sea demasiado grande */
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Ajustamos el tamaño de la imagen para que ocupe todo el ancho del contenedor */
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ESTILOS DE REDES SOCIALES FLOTANTES */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.social-buttons {
+    position: fixed;
+    bottom: 30px; /* Mover los botones más abajo */
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Asegurar que los botones estén siempre al frente */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* Cambiar a círculo */
+    width: 60px; /* Definir tamaño del botón */
+    height: 60px; /* Definir tamaño del botón */
+    justify-content: center; /* Centrar ícono */
+    position: relative; /* Necesario para el pseudo-elemento */
+    transition: background-color 0.3s ease;
+}
+
+.social-button .icon {
+    font-size: 32px; /* Aumentar el tamaño del icono */
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover .icon {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.email {
+    background-color: #0072c6; /* Color azul similar al de Outlook */
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+/* Estilos para el texto emergente de WhatsApp */
+.popup-text {
+    position: absolute;
+    left: 70px; /* Posicionar el texto a la derecha del botón */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white; /* Fondo blanco */
+    color: #25d366; /* Color del texto */
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    white-space: nowrap; /* Evitar que el texto se divida en líneas */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 16px; /* Ajustar el tamaño del texto */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Añadir una sombra para mejor visibilidad */
+    pointer-events: none;
+    z-index: -1; /* Asegurar que esté detrás del botón */
+}
+
+.show-text {
+    opacity: 1;
+    transform: translateY(-50%) translateX(10px);
+    z-index: 1001; /* Mostrar el texto por encima del botón */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .social-buttons {
+        bottom: 30px; /* Subir los botones para que no los tape el menú */
+        right: 10px; /* Mover los botones más a la izquierda */
+        display: flex; /* Asegurar que los botones se muestren en móviles */
+    }
+
+    .social-button {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .social-button .icon {
+        font-size: 40px;
+    }
+
+    .social-button:hover .icon {
+        transform: none;
+    }
+
+    .popup-text {
+        display: none; /* No mostrar el texto emergente en móviles */
+    }
+
+    .whatsapp-popup {
+        left: 10px;
+        bottom: 30px; /* Ajustar esta propiedad para bajar el botón en móviles */
+    }
+}
+
+/* Asegurar que los botones estén siempre al frente */
+.social-buttons, .whatsapp-popup {
+    z-index: 10000;
+}
+
+/* Posicionamiento fijo para el botón de WhatsApp */
+.whatsapp-popup {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000; /* Asegurar que el botón de WhatsApp esté al frente */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos generales para los botones flotantes */
+.btn-donaciones, .btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Botón de WhatsApp existente */
+.btn-whatsapp {
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+ /* Estilos generales para el cuadro de donaciones */
+ .donation-box {
+    position: fixed;
+    top: 750px;
+    left: -300px; /* Posición inicial fuera de la pantalla */
+    padding: 15px 25px;
+    background-color: #7EC8E3; /* Color verde claro */
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: left 0.5s ease-in-out; /* Transición suave */
+}
+
+.donation-box.show {
+    left: 20px; /* Posición final en la pantalla */
+}
+
+.donation-box:hover {
+    background-color: #A5D6A7; /* Color más claro al pasar el mouse */
+}
+/* Icono de corazón */
+.donation-box .fa-heart {
+    margin-right: 10px;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .donation-box {
+        top: 700px; /* Ajustar la posición para pantallas pequeñas */
+        left: -250px; /* Posición inicial ajustada */
+        padding: 10px 15px;
+        font-size: 16px;
+        left: -100vw; /* Mantener fuera de la vista en dispositivos móviles */
+    }
+
+    .donation-box.show {
+        left: 10px; /* Posición final ajustada */
+    }
+}
