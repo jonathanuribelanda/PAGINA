@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="../assets/icon/logo-eishel.svg" />
+    <title>Eishel | Bolsa de trabajo</title>
+    <link rel="stylesheet" href="./work-bench.css" />
+    <link rel="stylesheet" href="../base-styles/root.css" />
+    <link rel="stylesheet" href="../base-styles/header.css" />
+    <link rel="stylesheet" href="../base-styles/footer.css" />
+    <link rel="stylesheet" href="../index-menu/header-menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0EJKZPSH9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C0EJKZPSH9');
+</script>
+
+
+</head>
+<body>
+    <header class="header">
+        <a class="header-logoAnchor" href="../">
+            <img class="header-logoAnchor-image" src="../assets/icon/logo-eishel.png" alt="Eishel-logo" />
+        </a>
+        <nav class="headerMenu">
+            <div class="responsiveMenu-container" id="menu">
+                <figure class="responsiveMenu-container-hamburguer" id="menu-hamburguer"></figure>
+            </div>
+        </nav>
+    </header>
+    <menu class="responsiveMenu" id="header-menu-options">
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../" id="header-menu-home">Inicio</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../conócenos/" id="header-menu-aboutUs">Conócenos</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../servicios/" id="header-menu-services">Servicios</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../galería/" id="header-menu-gallery">Galería</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../donaciones/" id="header-menu-donations">Donaciones</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <!--
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../asistencia-tecnica/" id="header-menu-support">Soporte</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        -->
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden actual" href="../bolsa-de-trabajo/" id="header-menu-workBench">Bolsa de trabajo</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor responsiveMenu-option-anchor--last-option hidden" href="../contacto/" id="header-menu-contact">Contáctanos</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+    </menu>
+
+    <!-- Botones de redes sociales -->
+<div class="social-buttons">
+    <a href="https://www.facebook.com/EishelNuestroHogar/?locale=es_LA" class="social-button facebook">
+        <i class="icon fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/communityeishel?igsh=ZDdxOWUyZHg5OG0y" class="social-button instagram">
+        <i class="icon fab fa-instagram"></i>
+    </a>
+    <a href="mailto:informes@eishel.org?cc=informes@eishel.mx&amp;subject=Eishel%3A%20Solicitud%20de%20informaci%C3%B3n%20v%C3%ADa%20web&amp;body=Hola%2C%20quisiera%20informaci%C3%B3n%20de%20la%20residencia%20para%20(indique%20nombre%20a%20continuaci%C3%B3n)%3A%0D%0A-------%0D%0ADatos%20de%20contacto%20a%20continuaci%C3%B3n%0D%0A%0D%0ANombre%20y%20apellidos%3A%0D%0A%0D%0ATel%C3%A9fono%20celular%20o%20principal%3A%0D%0A%0D%0ACorreo%20electr%C3%B3nico%3A%0D%0A%0D%0ALugar%20de%20residencia%3A%0D%0A%0D%0AComentarios%20u%20observaciones%20de%20la%20solicitud%3A" class="social-button email">
+        <i class="icon fas fa-envelope"></i>
+    </a>
+</div>
+
+<!-- Botón de WhatsApp emergente -->
+<div class="whatsapp-popup">
+    <a href="https://api.whatsapp.com/send?phone=+527778049130&amp;text=Hola, deseo información." target="_blank" class="social-button whatsapp">
+        <span class="icon"><i class="fab fa-whatsapp"></i></span>
+        <span class="popup-text">¿Deseas más información?</span>
+    </a>
+</div>
+
+<script src="script3.js"></script>
+    <main>
+        <section class="title">
+            <article class="title-background">
+                <div class="title-background-up">
+                    <figure class="up-background-figure ubf-1"></figure>
+                    <figure class="up-background-figure ubf-2"></figure>
+                    <figure class="up-background-figure ubf-3"></figure>
+                    <figure class="up-background-figure ubf-4"></figure>
+                    <figure class="up-background-figure ubf-5"></figure>
+                    <figure class="up-background-figure ubf-6"></figure>
+                    <figure class="up-background-figure ubf-7"></figure>
+                    <figure class="up-background-figure ubf-8"></figure>
+                </div>
+                <div class="title-background-bottom">
+                    <figure class="bottom-background-figure bbf-1"></figure>
+                    <figure class="bottom-background-figure bbf-2"></figure>
+                    <figure class="bottom-background-figure bbf-3"></figure>
+                    <figure class="bottom-background-figure bbf-4"></figure>
+                    <figure class="bottom-background-figure bbf-5"></figure>
+                    <figure class="bottom-background-figure bbf-6"></figure>
+                    <figure class="bottom-background-figure bbf-7"></figure>
+                    <figure class="bottom-background-figure bbf-8"></figure>
+                </div>
+            </article>
+            
+            <h1 class="title-text">BOLSA <br /> DE TRABAJO</h1>
+        </section>
+         <div class="container">
+           
+        <div class="gall-container">
+             
+            <div class="gall">
+                 
+              <div class="slide">
+                <img src="img1.jpg" alt="img1">
+              </div>
+              <div class="slide">
+                <img src="img2.jpg" alt="img2">
+              </div>
+              <div class="slide">
+                <img src="img3.jpg" alt="img3">
+              </div>
+              <div class="slide">
+                <img src="img4.jpg" alt="img4">
+              </div>
+            </div>
+            <div class="controls">
+              <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+              <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+        </div>
+        <script src="scriptswork.js"></script>
+         </div>
+
+         <div class="descubre-container">
+            
+            <div class="descubre-content">
+                 <br><br><br>
+              <h2>Descubre todo lo que hay detrás de Eishel Nuestro Hogar</h2>
+              <p>
+                <br>
+                Somos una institución líder con más de 70 años de experiencia en el cuidado del adulto mayor, gracias al 
+                compromiso y dedicación de nuestro equipo de trabajo.
+                En Eishel Nuestro Hogar, estamos en constante búsqueda de individuos talentosos y 
+                apasionados que deseen ser parte de un equipo dinámico y orientado al éxito. Si eres una persona 
+                motivada, con habilidades excepcionales y un deseo de crecer profesionalmente, 
+                ¡te invitamos a considerar nuestras oportunidades de empleo!
+              </p>
+              <p>
+                Si estás listo para embarcarte en una emocionante jornada profesional con nosotros, revisa nuestras
+                 vacantes actuales y postúlate para aquellas que se alineen con tus habilidades y metas. 
+                 Nos emociona conocer a personas apasionadas y comprometidas con el éxito compartido.
+              </p>
+              <a href="#vacancies" target="_blank">Explora nuestras oportunidades laborales</a>
+            </div>
+          </div>
+        </div>
+        
+    <title>Testimonios de Ex Trabajadores</title>
+    <div class="subtitle-container">
+            
+        <br>
+<h2 class="subtitle">Testimonios</h2>
+    </div>
+  
+    <div class="testimonials-container">
+        <div class="testimonial" id="testimonial1">
+            <img src="Imagen1.jpg" alt="Fotografía de Ex Trabajador 1">
+            <h2>GLORIA ALFONSO HERRERA</h2>
+            <span class="staff-collaborator-span">RECAMARERA</span>
+                <span class="staff-collaborator-span">27 AÑOS EN EISHEL</span>
+            <p class="description">  Por cosa del destino ingrese a Eishel sin saber lo importante que se convertiría para 
+                mi la institución. Eishel es una segunda casa para mí, me gusta mucho el poder
+                 convivir con mis compañeros colaboradores, pero siendo muy sincera me gusta más 
+                 convivir con los residentes, conocer sobre sus creencias, cultura y experiencias 
+                 vividas e igualmente poder alegrarles su día como ellos el mío.</p>
+            <p class="read-more" onclick="toggleText('more1')">Ver más</p>
+            <p id="more1" class="more-text" style="display:none;">Puedo decir con mucha certeza y honestidad que todo lo que tengo
+                y lo que soy es gracias a Eishel que me a dado muchas 
+                oportunidades como el ayudarme a poder estudiar 
+                (primaria y secundaria) y siempre reconociendo y valorando 
+                mi trabajo lo cual me motiva a siempre dar lo mejor de mí.</p>
+        </div>
+
+        <div class="testimonial" id="testimonial2">
+            <img src="Imagen2.jpg" alt="Fotografía de Ex Trabajador 2">
+            <h2>GABRIELA VÁZQUEZ JAIMES</h2>
+            <span class="staff-collaborator-span">REPOSTERA</span>
+                        <span class="staff-collaborator-span">24 AÑOS EN EISHEL</span>
+                   
+            <p class="description">Actualmente estoy como encargada del área de repostería, 
+                logré estar en este puesto, gracias a la confianza y oportunidad que me dio la institución, ya que hace 24 años yo ingresé como lava loza, después como mesera y
+                 cocinera. Poco a poco fui teniendo un crecimiento gracias a mi desempeño y ganas de 
+                 seguir aprendiendo cosas nuevas y a la institución que me dio las herramientas 
+                 necesarias para lograrlo.</p>
+            <p class="read-more" onclick="toggleText('more2')">Ver más</p>
+            <p id="more2" class="more-text" style="display:none;">Eishel significa mucho para mí, 
+                jamás pensé permanecer tantos años aquí, para ser sincera, sin embargo, estoy 
+                muy agradecida, por lo mucho que he logrado en mi vida personal y laboral, por 
+                las cosas buenas y no tan buenas también. Solo puedo decir 
+                gracias muchas gracias Eishel.</p>
+        </div>
+
+        <div class="testimonial" id="testimonial3">
+            <img src="Imagen3.jpg" alt="Fotografía de Ex Trabajador 3">
+            <h2>JOSÉ ANTONIO BAUTISTA MERCADO</h2>
+            <span class="staff-collaborator-span">ASISTENTE GERIATRICO</span>
+                        <span class="staff-collaborator-span">8 AÑOS EN EISHEL</span>
+            <p class="description">Tuve la dicha de entrar al Eishel hace casi 9 años,
+                como garrotero de comedor a los pocos meses me dieron la oportunidad de 
+                crecimiento como mesero, las actividades eran diferentes pero de igual manera interesantes, 
+                un trato más directo con los residentes, interactuar con ellos, conocerlos más y 
+                aprender de ellos, incluso el crear un vínculo hizo más especial e interesante el trabajo, 
+                tanto así, que llamó mi atención ver la oportunidad de un cambio al área de asistentes 
+                geriátricos.</p>
+            <p class="read-more" onclick="toggleText('more3')">Ver más</p>
+            <p id="more3" class="more-text" style="display:none;">Me brindaron la confianza y el apoyo 
+                para estar aún más cerca con los residentes y que mis actividades como trabajador dieran un giro
+                 de 180 grados, un trato aún más directo con ellos, ser sus oídos, sus ojos, sus manos, 
+                 ser ese apoyo que necesitan para tener una vida de calidad, me ha hecho sentir bendecido y 
+                 saber que vivir para servir, siempre llena el corazón y el alma cuando se hace con el corazón</p>
+        </div>
+
+        <div class="testimonial" id="testimonial4">
+            <img src="Imagen4.png" alt="Fotografía de Ex Trabajador 4">
+            <h2>CAROLINA RODRÍGUEZ</h2>
+                        <span class="staff-collaborator-span">EX COLABORADORA</span>
+                        <span class="staff-collaborator-span">1 AÑOS EN EISHEL</span>
+            <p class="description">Soy estudiante de gastronomía, hace 4 años casualmente dije: 
+                “trabajaré en una cocina kosher” y para ser sincera 
+                lo veía demasiado lejos. Jamás imaginé cumplir ese sueño durante mi
+                 último año de Licenciatura, todo esto fue posible gracias a Eishel.
+                 Lo que comenzó con unas pasantías de 4 meses, se transformó en un 
+                 trabajo de tiempo indefinido en la cocina de leche. 
+                 Y de primera mano pude comprender a qué se referían con 
+                 “Nuestro hogar” este trabajo se convirtió en mi hogar por 
+                 más de un año. En el no solo aprendí sobre la gastronomía kosher 
+                 y la comunidad judía, Eishel le dio otro sentido a la gastronomía 
+                 mostrándomela desde el punto de vista de la salud.</p>
+            <p class="read-more" onclick="toggleText('more4')">Ver más</p>
+            <p id="more4" class="more-text" style="display:none;">Siempre estaré agradecida por el gran equipo de trabajo del que forme
+                parte, un excelente jefe, que me dio la oportunidad de crecer 
+                laboralmente y a mis compañeros de cocina. Decir que trabaje en 
+                Eishel Nuestro Hogar, siempre será un orgullo para mí y si en 
+                algún futuro volvemos a coincidir, estaré encantada de poder colaborar 
+                juntos nuevamente.</p>
+        </div>
+        
+        <script src="scripts.js"></script>
+    </div>
+
+    
+
+
+<section id="vacancies">
+        <section class="vacancies">
+            <img src="Vacante_Cuidadora.jpeg" alt="Descripción de la imagen">
+            <!--
+            <article class="vacancies-card">
+                <div class="vacancies-card-title">
+                    <h2 class="vacancies-card-title-text">SOLICITAMOS</h2>
+                    <span class="vacancies-card-title-span">"ASISTENTE GERIATRICO"</span>
+                </div>
+                <div class="vacancies-card-info">
+                    <div class="vacancies-card-info-block">
+                        <span class="vacancies-card-info-block-title">REQUISITOS GENERALES:</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">Sexo: Ambos.</li>
+                            <li class="vacancies-card-info-block-list-item">Edad: 20 a 30 años.</li>
+                            <li class="vacancies-card-info-block-list-item">Escolaridad mínima: Tec. en Enfermería.</li>
+                            <li class="vacancies-card-info-block-list-item">Experiencia mínima: 1 año.</li>
+                        </ul>
+                    </div>
+                    <div class="vacancies-card-info-block order-change">
+                        <span class="vacancies-card-info-block-title">OFRECEMOS</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">Prestaciones superiores a la ley.</li>
+                            <li class="vacancies-card-info-block-list-item">Fondo de ahorro.</li>
+                            <li class="vacancies-card-info-block-list-item">Caja de ahorro.</li>
+                            <li class="vacancies-card-info-block-list-item">Servicio de comedor.</li>
+                            <li class="vacancies-card-info-block-list-item">Vales de despensa.</li>
+                            <li class="vacancies-card-info-block-list-item">IMSS.</li>
+                            <li class="vacancies-card-info-block-list-item">Uniformes.</li>
+                        </ul>
+                    </div>
+                    <div class="vacancies-card-info-block margin-left-auto">
+                        <span class="vacancies-card-info-block-title">CONDICIONES</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">12 horas de trabajo por 36 de descanso.</li>
+                        </ul>
+                    </div>
+                    <img class="vacancies-card-icon" src="./assets/nurse-icon.svg" alt="">
+                </div>
+            </article>
+            <div class="vacancies-buttons">
+                <a href="tel:7778049131" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/small-phone-icon.svg" alt="small phone icon">
+                </a>                
+                <a href="https://wa.me/7778049131" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/whatsapp.png" alt="WhatsApp icon">
+                </a>
+            </div> 
+           -->
+           <!--  <article class="vacancies-card">
+                <div class="vacancies-card-title">
+                    <h2 class="vacancies-card-title-text">SOLICITAMOS</h2>
+                    <span class="vacancies-card-title-span">"GALOPINO"</span>
+                </div>
+                <div class="vacancies-card-info">
+                    <div class="vacancies-card-info-block">
+                        <span class="vacancies-card-info-block-title">REQUISITOS GENERALES:</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">Sexo: Ambos.</li>
+                            <li class="vacancies-card-info-block-list-item">Edad: 20 a 30 años.</li>
+                            <li class="vacancies-card-info-block-list-item">Escolaridad mínima: Secundaria.</li>
+                            <li class="vacancies-card-info-block-list-item">Experiencia mínima: 1 año.</li>
+                        </ul>
+                    </div>
+                    <div class="vacancies-card-info-block order-change">
+                        <span class="vacancies-card-info-block-title">OFRECEMOS</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">Prestaciones superiores a la ley.</li>
+                            <li class="vacancies-card-info-block-list-item">Fondo de ahorro.</li>
+                            <li class="vacancies-card-info-block-list-item">Caja de ahorro.</li>
+                            <li class="vacancies-card-info-block-list-item">Servicio de comedor.</li>
+                            <li class="vacancies-card-info-block-list-item">Vales de despensa.</li>
+                            <li class="vacancies-card-info-block-list-item">IMSS.</li>
+                            <li class="vacancies-card-info-block-list-item">Uniformes.</li>
+                        </ul>
+                    </div>
+                    <div class="vacancies-card-info-block margin-left-auto">
+                        <span class="vacancies-card-info-block-title">CONDICIONES</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">6 días de trabajo por 1 día de descanso a la semana.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="vacancies-card-icon" src="./assets/dishes-icon.svg" alt="">
+            </article>
+            -->
+            <div class="vacancies-buttons">
+                <a href="tel:7778049131" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/small-phone-icon.svg" alt="small phone icon">
+                </a>                
+                <a href="https://wa.me/7778049131" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/whatsapp.png" alt="WhatsApp icon">
+                </a>
+                
+            </div>
+            
+            <img src="Vacantes_Adicionales.jpeg" alt="Descripción de la imagen">
+            
+              <div class="vacancies-buttons">
+                <a href="tel:7778049131" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/small-phone-icon.svg" alt="small phone icon">
+                </a>                
+                <a href="https://wa.me/7778049131" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/whatsapp.png" alt="WhatsApp icon">
+                </a>
+                
+            </div>
+            <!--
+            -->
+            <!--
+            <article class="vacancies-card">
+                <div class="vacancies-card-title">
+                    <h2 class="vacancies-card-title-text">SOLICITAMOS</h2>
+                    <span class="vacancies-card-title-span">"MESERO"</span>
+                </div>
+                <div class="vacancies-card-info">
+                    <div class="vacancies-card-info-block">
+                        <span class="vacancies-card-info-block-title">REQUISITOS GENERALES:</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">Sexo: Masculino.</li>
+                            <li class="vacancies-card-info-block-list-item">Edad: 20 a 35 años.</li>
+                            <li class="vacancies-card-info-block-list-item">Escolaridad mínima: Secundaria.</li>
+                            <li class="vacancies-card-info-block-list-item">Experiencia mínima: 1 año.</li>
+                        </ul>
+                    </div>
+                    <div class="vacancies-card-info-block order-change">
+                        <span class="vacancies-card-info-block-title">OFRECEMOS</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">Prestaciones superiores a la ley.</li>
+                            <li class="vacancies-card-info-block-list-item">Fondo de ahorro.</li>
+                            <li class="vacancies-card-info-block-list-item">Caja de ahorro.</li>
+                            <li class="vacancies-card-info-block-list-item">Servicio de comedor.</li>
+                            <li class="vacancies-card-info-block-list-item">Vales de despensa.</li>
+                            <li class="vacancies-card-info-block-list-item">IMSS.</li>
+                            <li class="vacancies-card-info-block-list-item">Uniformes.</li>
+                        </ul>
+                    </div>
+                    <div class="vacancies-card-info-block margin-left-auto">
+                        <span class="vacancies-card-info-block-title">CONDICIONES</span>
+                        <ul class="vacancies-card-info-block-list">
+                            <li class="vacancies-card-info-block-list-item">6 días de trabajo por 1 día de descanso a la semana.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="vacancies-card-icon" src="./assets/waiter-icon.svg" alt="">
+            </article>
+            <div class="vacancies-buttons">
+                <a href="tel:7777177708" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/small-phone-icon.svg" alt="small phone icon">
+                </a>                
+                <a href="https://wa.me/7777177708" class="vacancies-buttons--call vacancies-button">
+                    <img class="vacancies-button-icon" src="./assets/whatsapp.png" alt="WhatsApp icon">
+                </a>
+                
+               
+            </div>    
+            
+        </section>
+          -->  
+    </section>
+    
+    </main>
+    
+    <footer>
+        <p class="footer-paragraph">CONTACTO</p>
+        <article class="footer-direction">
+            <a class="footer-direction-anchor" href="https://goo.gl/maps/P869gwWPdsUtx6Za7"><img src="../assets/icon/ubication-icon.svg" alt="ubication icon"></a>
+            <p class="footer-direction-paragraph">Calle Francisco I. Madero 402, Miraval, 62270 Cuernavaca, Mor.</p>
+        </article>
+        <article class="footer-phone">
+            <a class="footer-phone-anchor" href="tel: 777 804 92 32"> <img src="../assets/icon/small-phone-icon.svg" alt="phone icon"></a>
+            <p class="footer-phone-paragraph">777 804 91 32</p>
+        </article>
+        <article class="footer-privacy">
+            <a class="footer-privacy-anchor" href="../AVISO.HTML">
+                <p class="footer-privacy-anchor-paragraph">AVISO DE PRIVACIDAD</p>
+            </a>
+        </article>
+        
+    </footer>
+ <!--
+            
+    <menu class="bottomMenu">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://api.whatsapp.com/send?phone=+527778049130&text=Hola, Eishel Nuestro Hogar.">
+                <img class="menu-icon--whatsapp" src="../assets/icon/whatsapp-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">whatsapp</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="#">
+                <img class="menu-icon--email" src="../assets/icon/messenger-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">Messenger</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url">
+                <img class="menu-icon--donations" src="../assets/icon/donations-menu-icon.png" alt="donations icon">
+            </a>
+            <span class="bottomMenu-article-text">Donaciones</span>
+        </article>
+    </menu> -->
+    
+    <script src="../index-menu/header-menu.js"></script>
+    
+   
+</body>
+
+
+</html>
