@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!--Codigo Horacio-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eishel es una casa de retiro para Adultos Mayores en Cuernavaca, Morelos, cerca de la Ciudad de México. Contáctanos para solicitar una cita, recibir informes, o conocer más sobre nuestros servicios y actividades.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+
+
+    <link rel="icon" type="image/svg" href="../assets/icon/logo-eishel.svg" />
+    <title>Eishel | Contáctanos</title>
+   
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../base-styles/root.css">
+    <link rel="stylesheet" href="../base-styles/header.css">
+    <link rel="stylesheet" href="../base-styles/footer.css">
+    <link rel="stylesheet" href="../index-menu/header-menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0EJKZPSH9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C0EJKZPSH9');
+</script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a class="header-logoAnchor" href="../">
+            <img class="header-logoAnchor-image" src="../assets/icon/logo-eishel.png" alt="Eishel-logo" />
+        </a>
+        <nav class="headerMenu">
+            <div class="responsiveMenu-container" id="menu">
+                <figure class="responsiveMenu-container-hamburguer" id="menu-hamburguer"></figure>
+            </div>
+        </nav>
+    </header>
+    <menu class="responsiveMenu" id="header-menu-options">
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../" id="header-menu-home">Inicio</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../conócenos/" id="header-menu-aboutUs">Conócenos</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../servicios/" id="header-menu-services">Servicios</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../galería/" id="header-menu-gallery">Galería</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../donaciones/" id="header-menu-donations">Donaciones</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <!--
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../asistencia-tecnica/" id="header-menu-support">Soporte</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        -->
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../bolsa-de-trabajo/" id="header-menu-workBench">Bolsa de trabajo</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor responsiveMenu-option-anchor--last-option hidden actual" href="../contacto/" id="header-menu-contact">Contáctanos</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+    </menu>
+
+    <main>
+        <section class="title">
+            <div class="title-figure-container">
+                <article class="figure-1 figure">
+                    <figure class="figure-form-1 form"></figure>
+                    <figure class="figure-form-2 form"></figure>
+                    <figure class="figure-form-3 form"></figure>
+                </article>
+                <article class="figure-2 figure">
+                    <figure class="figure-form-1 form"></figure>
+                    <figure class="figure-form-2 form"></figure>
+                    <figure class="figure-form-3 form"></figure>
+                </article>
+                <article class="figure-3 figure">
+                    <figure class="figure-form-1 form"></figure>
+                    <figure class="figure-form-2 form"></figure>
+                    <figure class="figure-form-3 form"></figure>
+                </article>
+            </div>
+            <h1 class="title-text">CONTACTO</h1>
+        </section>
+        <br>
+        <br/>
+         <br>
+        <br/>
+        <!--
+        <p class="buttons-text">Si desea comunicarse con nosotros  marcar al <br /> siguiente numero: 777 804 9132</p> -->
+        
+        <h1 class="form-title">¡Queremos Conocerte! Envíanos tus datos y nos pondremos en contacto contigo</h1>
+<div class="form-container">
+     <form id="sectiondirect">
+         
+     </form>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="fullName">Nombre Completo</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <div class="error" id="nameError">El nombre no puede contener números o caracteres especiales.</div>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="emailError">Por favor, ingrese un correo electrónico válido.</div>
+        </div>
+        <div class="form-group">
+            <label for="countryCode">Lada del País</label>
+            <select id="countryCode" name="countryCode" required>
+    <option value="">Seleccione la lada</option>
+    <option value="+93">+93 Afganistán</option>
+    <option value="+355">+355 Albania</option>
+    <option value="+213">+213 Argelia</option>
+    <option value="+376">+376 Andorra</option>
+    <option value="+244">+244 Angola</option>
+    <option value="+1">+1 Antigua y Barbuda</option>
+    <option value="+54">+54 Argentina</option>
+    <option value="+374">+374 Armenia</option>
+    <option value="+297">+297 Aruba</option>
+    <option value="+61">+61 Australia</option>
+    <option value="+43">+43 Austria</option>
+    <option value="+994">+994 Azerbaiyán</option>
+    <option value="+1">+1 Bahamas</option>
+    <option value="+973">+973 Baréin</option>
+    <option value="+880">+880 Bangladés</option>
+    <option value="+1">+1 Barbados</option>
+    <option value="+375">+375 Bielorrusia</option>
+    <option value="+32">+32 Bélgica</option>
+    <option value="+501">+501 Belice</option>
+    <option value="+229">+229 Benín</option>
+    <option value="+1">+1 Bermudas</option>
+    <option value="+975">+975 Bután</option>
+    <option value="+591">+591 Bolivia</option>
+    <option value="+387">+387 Bosnia y Herzegovina</option>
+    <option value="+267">+267 Botsuana</option>
+    <option value="+55">+55 Brasil</option>
+    <option value="+673">+673 Brunéi</option>
+    <option value="+359">+359 Bulgaria</option>
+    <option value="+226">+226 Burkina Faso</option>
+    <option value="+257">+257 Burundi</option>
+    <option value="+238">+238 Cabo Verde</option>
+    <option value="+855">+855 Camboya</option>
+    <option value="+237">+237 Camerún</option>
+    <option value="+1">+1 Canadá</option>
+    <option value="+238">+238 Cabo Verde</option>
+    <option value="+236">+236 República Centroafricana</option>
+    <option value="+235">+235 Chad</option>
+    <option value="+56">+56 Chile</option>
+    <option value="+86">+86 China</option>
+    <option value="+57">+57 Colombia</option>
+    <option value="+269">+269 Comoras</option>
+    <option value="+243">+243 República Democrática del Congo</option>
+    <option value="+242">+242 República del Congo</option>
+    <option value="+682">+682 Islas Cook</option>
+    <option value="+506">+506 Costa Rica</option>
+    <option value="+225">+225 Costa de Marfil</option>
+    <option value="+385">+385 Croacia</option>
+    <option value="+53">+53 Cuba</option>
+    <option value="+357">+357 Chipre</option>
+    <option value="+420">+420 República Checa</option>
+    <option value="+45">+45 Dinamarca</option>
+    <option value="+253">+253 Yibuti</option>
+    <option value="+1">+1 Dominica</option>
+    <option value="+1">+1 República Dominicana</option>
+    <option value="+593">+593 Ecuador</option>
+    <option value="+20">+20 Egipto</option>
+    <option value="+503">+503 El Salvador</option>
+    <option value="+240">+240 Guinea Ecuatorial</option>
+    <option value="+291">+291 Eritrea</option>
+    <option value="+372">+372 Estonia</option>
+    <option value="+251">+251 Etiopía</option>
+    <option value="+500">+500 Islas Malvinas</option>
+    <option value="+298">+298 Islas Feroe</option>
+    <option value="+679">+679 Fiyi</option>
+    <option value="+358">+358 Finlandia</option>
+    <option value="+33">+33 Francia</option>
+    <option value="+594">+594 Guayana Francesa</option>
+    <option value="+689">+689 Polinesia Francesa</option>
+    <option value="+241">+241 Gabón</option>
+    <option value="+220">+220 Gambia</option>
+    <option value="+995">+995 Georgia</option>
+    <option value="+49">+49 Alemania</option>
+    <option value="+233">+233 Ghana</option>
+    <option value="+350">+350 Gibraltar</option>
+    <option value="+30">+30 Grecia</option>
+    <option value="+299">+299 Groenlandia</option>
+    <option value="+502">+502 Guatemala</option>
+    <option value="+224">+224 Guinea</option>
+    <option value="+245">+245 Guinea-Bisáu</option>
+    <option value="+592">+592 Guyana</option>
+    <option value="+509">+509 Haití</option>
+    <option value="+504">+504 Honduras</option>
+    <option value="+852">+852 Hong Kong</option>
+    <option value="+36">+36 Hungría</option>
+    <option value="+354">+354 Islandia</option>
+    <option value="+91">+91 India</option>
+    <option value="+62">+62 Indonesia</option>
+    <option value="+98">+98 Irán</option>
+    <option value="+964">+964 Irak</option>
+    <option value="+353">+353 Irlanda</option>
+    <option value="+44">+44 Isla de Man</option>
+    <option value="+972">+972 Israel</option>
+    <option value="+39">+39 Italia</option>
+    <option value="+1">+1 Jamaica</option>
+    <option value="+81">+81 Japón</option>
+    <option value="+962">+962 Jordania</option>
+    <option value="+7">+7 Kazajistán</option>
+    <option value="+254">+254 Kenia</option>
+    <option value="+686">+686 Kiribati</option>
+    <option value="+383">+383 Kosovo</option>
+    <option value="+965">+965 Kuwait</option>
+    <option value="+996">+996 Kirguistán</option>
+    <option value="+856">+856 Laos</option>
+    <option value="+371">+371 Letonia</option>
+    <option value="+961">+961 Líbano</option>
+    <option value="+266">+266 Lesoto</option>
+    <option value="+231">+231 Liberia</option>
+    <option value="+218">+218 Libia</option>
+    <option value="+423">+423 Liechtenstein</option>
+    <option value="+370">+370 Lituania</option>
+    <option value="+352">+352 Luxemburgo</option>
+    <option value="+853">+853 Macao</option>
+    <option value="+389">+389 Macedonia del Norte</option>
+    <option value="+261">+261 Madagascar</option>
+    <option value="+265">+265 Malaui</option>
+    <option value="+60">+60 Malasia</option>
+    <option value="+960">+960 Maldivas</option>
+    <option value="+223">+223 Malí</option>
+    <option value="+356">+356 Malta</option>
+    <option value="+692">+692 Islas Marshall</option>
+    <option value="+222">+222 Mauritania</option>
+    <option value="+230">+230 Mauricio</option>
+    <option value="+52">+52 México</option>
+    <option value="+691">+691 Micronesia</option>
+    <option value="+373">+373 Moldavia</option>
+    <option value="+377">+377 Mónaco</option>
+    <option value="+976">+976 Mongolia</option>
+    <option value="+382">+382 Montenegro</option>
+    <option value="+212">+212 Marruecos</option>
+    <option value="+258">+258 Mozambique</option>
+    <option value="+95">+95 Myanmar</option>
+    <option value="+264">+264 Namibia</option>
+    <option value="+674">+674 Nauru</option>
+    <option value="+977">+977 Nepal</option>
+    <option value="+31">+31 Países Bajos</option>
+    <option value="+64">+64 Nueva Zelanda</option>
+    <option value="+505">+505 Nicaragua</option>
+    <option value="+227">+227 Níger</option>
+    <option value="+234">+234 Nigeria</option>
+    <option value="+850">+850 Corea del Norte</option>
+    <option value="+47">+47 Noruega</option>
+    <option value="+968">+968 Omán</option>
+    <option value="+92">+92 Pakistán</option>
+    <option value="+680">+680 Palaos</option>
+    <option value="+970">+970 Palestina</option>
+    <option value="+507">+507 Panamá</option>
+    <option value="+675">+675 Papúa Nueva Guinea</option>
+    <option value="+595">+595 Paraguay</option>
+    <option value="+51">+51 Perú</option>
+    <option value="+63">+63 Filipinas</option>
+    <option value="+48">+48 Polonia</option>
+    <option value="+351">+351 Portugal</option>
+    <option value="+1">+1 Puerto Rico</option>
+    <option value="+974">+974 Catar</option>
+    <option value="+262">+262 Reunión</option>
+    <option value="+40">+40 Rumania</option>
+    <option value="+7">+7 Rusia</option>
+    <option value="+250">+250 Ruanda</option>
+    <option value="+290">+290 Santa Elena</option>
+    <option value="+1">+1 San Cristóbal y Nieves</option>
+    <option value="+508">+508 San Pedro y Miquelón</option>
+    <option value="+1">+1 Santa Lucía</option>
+    <option value="+1">+1 San Vicente y las Granadinas</option>
+    <option value="+685">+685 Samoa</option>
+    <option value="+378">+378 San Marino</option>
+    <option value="+239">+239 Santo Tomé y Príncipe</option>
+    <option value="+966">+966 Arabia Saudita</option>
+    <option value="+221">+221 Senegal</option>
+    <option value="+381">+381 Serbia</option>
+    <option value="+248">+248 Seychelles</option>
+    <option value="+232">+232 Sierra Leona</option>
+    <option value="+65">+65 Singapur</option>
+    <option value="+421">+421 Eslovaquia</option>
+    <option value="+386">+386 Eslovenia</option>
+    <option value="+677">+677 Islas Salomón</option>
+    <option value="+252">+252 Somalia</option>
+    <option value="+27">+27 Sudáfrica</option>
+    <option value="+82">+82 Corea del Sur</option>
+    <option value="+211">+211 Sudán del Sur</option>
+    <option value="+34">+34 España</option>
+    <option value="+94">+94 Sri Lanka</option>
+    <option value="+249">+249 Sudán</option>
+    <option value="+597">+597 Surinam</option>
+    <option value="+46">+46 Suecia</option>
+    <option value="+41">+41 Suiza</option>
+    <option value="+963">+963 Siria</option>
+    <option value="+886">+886 Taiwán</option>
+    <option value="+992">+992 Tayikistán</option>
+    <option value="+255">+255 Tanzania</option>
+    <option value="+66">+66 Tailandia</option>
+    <option value="+228">+228 Togo</option>
+    <option value="+690">+690 Tokelau</option>
+    <option value="+676">+676 Tonga</option>
+    <option value="+1">+1 Trinidad y Tobago</option>
+    <option value="+216">+216 Túnez</option>
+    <option value="+90">+90 Turquía</option>
+    <option value="+993">+993 Turkmenistán</option>
+    <option value="+688">+688 Tuvalu</option>
+    <option value="+256">+256 Uganda</option>
+    <option value="+380">+380 Ucrania</option>
+    <option value="+971">+971 Emiratos Árabes Unidos</option>
+    <option value="+44">+44 Reino Unido</option>
+    <option value="+1">+1 Estados Unidos</option>
+    <option value="+598">+598 Uruguay</option>
+    <option value="+998">+998 Uzbekistán</option>
+    <option value="+678">+678 Vanuatu</option>
+    <option value="+379">+379 Ciudad del Vaticano</option>
+    <option value="+58">+58 Venezuela</option>
+    <option value="+84">+84 Vietnam</option>
+    <option value="+967">+967 Yemen</option>
+    <option value="+260">+260 Zambia</option>
+    <option value="+263">+263 Zimbabue</option>
+</select>
+        </div>
+        <div class="form-group">
+            <label for="phone">Número de Teléfono</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+            <div class="error" id="phoneError">Ingrese un número de teléfono válido (10 dígitos).</div>
+        </div>
+        <div class="form-group">
+            <label for="country">País</label>
+            <select id="country" name="country" required>
+    <option value="">Seleccione su país</option>
+    <option value="Afghanistan">Afganistán</option>
+    <option value="Albania">Albania</option>
+    <option value="Algeria">Argelia</option>
+    <option value="Andorra">Andorra</option>
+    <option value="Angola">Angola</option>
+    <option value="Antigua and Barbuda">Antigua y Barbuda</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Armenia">Armenia</option>
+    <option value="Australia">Australia</option>
+    <option value="Austria">Austria</option>
+    <option value="Azerbaijan">Azerbaiyán</option>
+    <option value="Bahamas">Bahamas</option>
+    <option value="Bahrain">Baréin</option>
+    <option value="Bangladesh">Bangladés</option>
+    <option value="Barbados">Barbados</option>
+    <option value="Belarus">Bielorrusia</option>
+    <option value="Belgium">Bélgica</option>
+    <option value="Belize">Belice</option>
+    <option value="Benin">Benín</option>
+    <option value="Bhutan">Bután</option>
+    <option value="Bolivia">Bolivia</option>
+    <option value="Bosnia and Herzegovina">Bosnia y Herzegovina</option>
+    <option value="Botswana">Botsuana</option>
+    <option value="Brazil">Brasil</option>
+    <option value="Brunei">Brunéi</option>
+    <option value="Bulgaria">Bulgaria</option>
+    <option value="Burkina Faso">Burkina Faso</option>
+    <option value="Burundi">Burundi</option>
+    <option value="Cabo Verde">Cabo Verde</option>
+    <option value="Cambodia">Camboya</option>
+    <option value="Cameroon">Camerún</option>
+    <option value="Canada">Canadá</option>
+    <option value="Central African Republic">República Centroafricana</option>
+    <option value="Chad">Chad</option>
+    <option value="Chile">Chile</option>
+    <option value="China">China</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Comoros">Comoras</option>
+    <option value="Congo">Congo</option>
+    <option value="Congo, Democratic Republic of the">República Democrática del Congo</option>
+    <option value="Costa Rica">Costa Rica</option>
+    <option value="Croatia">Croacia</option>
+    <option value="Cuba">Cuba</option>
+    <option value="Cyprus">Chipre</option>
+    <option value="Czech Republic">República Checa</option>
+    <option value="Denmark">Dinamarca</option>
+    <option value="Djibouti">Yibuti</option>
+    <option value="Dominica">Dominica</option>
+    <option value="Dominican Republic">República Dominicana</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="Egypt">Egipto</option>
+    <option value="El Salvador">El Salvador</option>
+    <option value="Equatorial Guinea">Guinea Ecuatorial</option>
+    <option value="Eritrea">Eritrea</option>
+    <option value="Estonia">Estonia</option>
+    <option value="Eswatini">Esuatini</option>
+    <option value="Ethiopia">Etiopía</option>
+    <option value="Fiji">Fiyi</option>
+    <option value="Finland">Finlandia</option>
+    <option value="France">Francia</option>
+    <option value="Gabon">Gabón</option>
+    <option value="Gambia">Gambia</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Germany">Alemania</option>
+    <option value="Ghana">Ghana</option>
+    <option value="Greece">Grecia</option>
+    <option value="Grenada">Granada</option>
+    <option value="Guatemala">Guatemala</option>
+    <option value="Guinea">Guinea</option>
+    <option value="Guinea-Bissau">Guinea-Bisáu</option>
+    <option value="Guyana">Guyana</option>
+    <option value="Haiti">Haití</option>
+    <option value="Honduras">Honduras</option>
+    <option value="Hungary">Hungría</option>
+    <option value="Iceland">Islandia</option>
+    <option value="India">India</option>
+    <option value="Indonesia">Indonesia</option>
+    <option value="Iran">Irán</option>
+    <option value="Iraq">Irak</option>
+    <option value="Ireland">Irlanda</option>
+    <option value="Israel">Israel</option>
+    <option value="Italy">Italia</option>
+    <option value="Ivory Coast">Costa de Marfil</option>
+    <option value="Jamaica">Jamaica</option>
+    <option value="Japan">Japón</option>
+    <option value="Jordan">Jordania</option>
+    <option value="Kazakhstan">Kazajistán</option>
+    <option value="Kenya">Kenia</option>
+    <option value="Kiribati">Kiribati</option>
+    <option value="Kuwait">Kuwait</option>
+    <option value="Kyrgyzstan">Kirguistán</option>
+    <option value="Laos">Laos</option>
+    <option value="Latvia">Letonia</option>
+    <option value="Lebanon">Líbano</option>
+    <option value="Lesotho">Lesoto</option>
+    <option value="Liberia">Liberia</option>
+    <option value="Libya">Libia</option>
+    <option value="Liechtenstein">Liechtenstein</option>
+    <option value="Lithuania">Lituania</option>
+    <option value="Luxembourg">Luxemburgo</option>
+    <option value="Madagascar">Madagascar</option>
+    <option value="Malawi">Malaui</option>
+    <option value="Malaysia">Malasia</option>
+    <option value="Maldives">Maldivas</option>
+    <option value="Mali">Malí</option>
+    <option value="Malta">Malta</option>
+    <option value="Marshall Islands">Islas Marshall</option>
+    <option value="Mauritania">Mauritania</option>
+    <option value="Mauritius">Mauricio</option>
+    <option value="Mexico">México</option>
+    <option value="Micronesia">Micronesia</option>
+    <option value="Moldova">Moldavia</option>
+    <option value="Monaco">Mónaco</option>
+    <option value="Mongolia">Mongolia</option>
+    <option value="Montenegro">Montenegro</option>
+    <option value="Morocco">Marruecos</option>
+    <option value="Mozambique">Mozambique</option>
+    <option value="Myanmar">Myanmar (Birmania)</option>
+    <option value="Namibia">Namibia</option>
+    <option value="Nauru">Nauru</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Netherlands">Países Bajos</option>
+    <option value="New Zealand">Nueva Zelanda</option>
+    <option value="Nicaragua">Nicaragua</option>
+    <option value="Niger">Níger</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="North Korea">Corea del Norte</option>
+    <option value="North Macedonia">Macedonia del Norte</option>
+    <option value="Norway">Noruega</option>
+    <option value="Oman">Omán</option>
+    <option value="Pakistan">Pakistán</option>
+    <option value="Palau">Palaos</option>
+    <option value="Panama">Panamá</option>
+    <option value="Papua New Guinea">Papúa Nueva Guinea</option>
+    <option value="Paraguay">Paraguay</option>
+    <option value="Peru">Perú</option>
+    <option value="Philippines">Filipinas</option>
+    <option value="Poland">Polonia</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Qatar">Catar</option>
+    <option value="Romania">Rumanía</option>
+    <option value="Russia">Rusia</option>
+    <option value="Rwanda">Ruanda</option>
+    <option value="Saint Kitts and Nevis">San Cristóbal y Nieves</option>
+    <option value="Saint Lucia">Santa Lucía</option>
+    <option value="Saint Vincent and the Grenadines">San Vicente y las Granadinas</option>
+    <option value="Samoa">Samoa</option>
+    <option value="San Marino">San Marino</option>
+    <option value="Sao Tome and Principe">Santo Tomé y Príncipe</option>
+    <option value="Saudi Arabia">Arabia Saudita</option>
+    <option value="Senegal">Senegal</option>
+    <option value="Serbia">Serbia</option>
+    <option value="Seychelles">Seychelles</option>
+    <option value="Sierra Leone">Sierra Leona</option>
+    <option value="Singapore">Singapur</option>
+    <option value="Slovakia">Eslovaquia</option>
+    <option value="Slovenia">Eslovenia</option>
+    <option value="Solomon Islands">Islas Salomón</option>
+    <option value="Somalia">Somalia</option>
+    <option value="South Africa">Sudáfrica</option>
+    <option value="South Korea">Corea del Sur</option>
+    <option value="South Sudan">Sudán del Sur</option>
+    <option value="Spain">España</option>
+    <option value="Sri Lanka">Sri Lanka</option>
+    <option value="Sudan">Sudán</option>
+    <option value="Suriname">Surinam</option>
+    <option value="Sweden">Suecia</option>
+    <option value="Switzerland">Suiza</option>
+    <option value="Syria">Siria</option>
+    <option value="Taiwan">Taiwán</option>
+    <option value="Tajikistan">Tayikistán</option>
+    <option value="Tanzania">Tanzania</option>
+    <option value="Thailand">Tailandia</option>
+    <option value="Timor-Leste">Timor Oriental</option>
+    <option value="Togo">Togo</option>
+    <option value="Tonga">Tonga</option>
+    <option value="Trinidad and Tobago">Trinidad y Tobago</option>
+    <option value="Tunisia">Túnez</option>
+    <option value="Turkey">Turquía</option>
+    <option value="Turkmenistan">Turkmenistán</option>
+    <option value="Tuvalu">Tuvalu</option>
+    <option value="Uganda">Uganda</option>
+    <option value="Ukraine">Ucrania</option>
+    <option value="United Arab Emirates">Emiratos Árabes Unidos</option>
+    <option value="United Kingdom">Reino Unido</option>
+    <option value="United States">Estados Unidos</option>
+    <option value="Uruguay">Uruguay</option>
+    <option value="Uzbekistan">Uzbekistán</option>
+    <option value="Vanuatu">Vanuatu</option>
+    <option value="Vatican City">Ciudad del Vaticano</option>
+    <option value="Venezuela">Venezuela</option>
+    <option value="Vietnam">Vietnam</option>
+    <option value="Yemen">Yemen</option>
+    <option value="Zambia">Zambia</option>
+    <option value="Zimbabwe">Zimbabue</option>
+</select>
+        </div>
+         <div class="form-group">
+            <label for="serviceRequested">Servicio Solicitado:</label>
+            <select id="serviceRequested" name="serviceRequested" required>
+                <option value="">Seleccione un servicio</option>
+                <option value="Estancia Permanente">Estancia Permanente</option>
+                <option value="Casa de Día">Casa de Día</option>
+                <option value="Recuperación Post Hospitalaria">Recuperación Post Hospitalaria</option>
+                <option value="Estancia Temporal">Estancia Temporal</option>
+                <option value="Chequeo Multidisciplinario">Chequeo Multidisciplinario</option>
+                <option value="Cuidado Especializado">Cuidado Especializado</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Comentario o Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar Solicitud</button>
+        <div id="statusMessage"></div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+     
+        <section class="buttons">
+            <article class="buttons-button">
+                <a class="buttons-button-anchor" href="https://api.whatsapp.com/send?phone=+527778049130&text=Hola, gracias por ponerte en contacto con nosotros." class="button-anchor">
+                    <img class="buttons-button-anchor-image" src="./assets/whatsapp-icon.svg" alt="whatsapp contact icon" class="button-anchor-image">
+                </a>
+                <p class="button-text">WhatsApp</p>
+            </article>
+            <article class="buttons-button">
+                <a class="buttons-button-anchor" href="mailto:informes@eishel.org?cc=informes@eishel.mx&subject=Eishel%3A%20Solicitud%20de%20informaci%C3%B3n%20v%C3%ADa%20web&body=Hola%2C%20quisiera%20informaci%C3%B3n%20de%20la%20residencia%20para%20(indique%20nombre%20a%20continuaci%C3%B3n)%3A%0D%0A-------%0D%0ADatos%20de%20contacto%20a%20continuaci%C3%B3n%0D%0A%0D%0ANombre%20y%20apellidos%3A%0D%0A%0D%0ATel%C3%A9fono%20celular%20o%20principal%3A%0D%0A%0D%0ACorreo%20electr%C3%B3nico%3A%0D%0A%0D%0ALugar%20de%20residencia%3A%0D%0A%0D%0AComentarios%20u%20observaciones%20de%20la%20solicitud%3A" class="button-anchor">
+                    <img class="buttons-button-anchor-image" src="./assets/email-icon.svg" alt="Clic para enviar solicitud de información por correo electrónico" class="button-anchor-image">
+                </a>
+                <p class="button-text">Email</p>
+            </article>
+            <article class="buttons-button">
+                <a class="buttons-button-anchor" href="https://www.facebook.com/EishelNuestroHogar" class="button-anchor">
+                    <img class="buttons-button-anchor-image" src="./assets/facebook-icon.svg" alt="facebook contact icon" class="button-anchor-image">
+                </a>
+                <p class="button-text">Facebook</p>
+            </article>
+        </section>
+        <section class="map">
+            <article class="map-container">
+                <figure class="map-tab"></figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.988242387034!2d-99.23905848462992!3d18.931914561404213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdde4af58e7edf%3A0x303c8eb138139c8b!2sEishel%20Nuestro%20Hogar!5e0!3m2!1ses!2smx!4v1652384707626!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-maps"></iframe>
+            </article>
+            <div class="map-text">
+                <h3 class="map-text-title">Dirección</h3>
+                <p class="map-text-paragraph">Calle Francisco I. Madero 402,</p>
+                <p class="map-text-paragraph">Miraval, 62270 Cuernavaca, Mor</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-paragraph">CONTACTO</p>
+        <article class="footer-direction">
+            <a class="footer-direction-anchor" href="https://goo.gl/maps/P869gwWPdsUtx6Za7"><img src="../assets/icon/ubication-icon.svg" alt="ubication icon"></a>
+            <p class="footer-direction-paragraph">Calle Francisco I. Madero 402, Miraval, 62270 Cuernavaca, Mor.</p>
+        </article>
+        <article class="footer-phone">
+            <a class="footer-phone-anchor" href="tel: 777 804 92 32"> <img src="../assets/icon/small-phone-icon.svg" alt="phone icon"></a>
+            <p class="footer-phone-paragraph">777 804 91 32</p>
+        </article>
+        <article class="footer-privacy">
+            <a class="footer-privacy-anchor" href="../AVISO.HTML">
+                <p class="footer-privacy-anchor-paragraph">AVISO DE PRIVACIDAD</p>
+            </a>
+        </article>
+    </footer>
+<!-- PIE DE PAGINA ANTERIOR
+
+    <menu class="bottomMenu">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://api.whatsapp.com/send?phone=+527778049130&text=Hola, Eishel Nuestro Hogar.">
+                <img class="menu-icon--whatsapp" src="../assets/icon/whatsapp-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">whatsapp</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="#">
+                <img class="menu-icon--email" src="../assets/icon/messenger-icon.svg" alt="whatsapp icon">
+            </a>
+            <span class="bottomMenu-article-text">Messenger</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url">
+                <img class="menu-icon--donations" src="../assets/icon/donations-menu-icon.png" alt="donations icon">
+            </a>
+            <span class="bottomMenu-article-text">Donaciones</span>
+        </article>
+    </menu>
+    -->
+
+    <script src="../index-menu/header-menu.js"></script>
+</body>
+
+
+<!-- Revisar codigo Horacio
+    
+    <body>
+    <header class="header">
+        <a class="header-logoAnchor" href="../">
+            <img class="header-logoAnchor-image" src="../assets/icon/logo-eishel.svg" alt="Eishel-logo" />
+        </a>
+        <nav class="headerMenu">
+            <div class="responsiveMenu-container" id="menu">
+                <figure class="responsiveMenu-container-hamburguer" id="menu-hamburguer"></figure>
+            </div>
+        </nav>
+    </header>
+    <menu class="responsiveMenu" id="header-menu-options">
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../" id="header-menu-home">Inicio</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../conócenos/" id="header-menu-aboutUs">Conócenos</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../servicios/" id="header-menu-services">Servicios</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../galería/" id="header-menu-gallery">Galería</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../donaciones/" id="header-menu-donations">Donaciones</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <!--
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../asistencia-tecnica/" id="header-menu-support">Soporte</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        -->
+       <!-- <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor hidden" href="../bolsa-de-trabajo/" id="header-menu-workBench">Bolsa de trabajo</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+        <div class="responsiveMenu-option">
+            <a class="responsiveMenu-option-anchor responsiveMenu-option-anchor--last-option hidden actual" href="../contacto/" id="header-menu-contact">Contáctanos</a>
+            <figure class="responsiveMenu-option-bottomBar"></figure>
+        </div>
+    </menu>
+
+    <main>
+        <section class="title">
+            <div class="title-figure-container">
+                <article class="figure-1 figure">
+                    <figure class="figure-form-1 form"></figure>
+                    <figure class="figure-form-2 form"></figure>
+                    <figure class="figure-form-3 form"></figure>
+                </article>
+                <article class="figure-2 figure">
+                    <figure class="figure-form-1 form"></figure>
+                    <figure class="figure-form-2 form"></figure>
+                    <figure class="figure-form-3 form"></figure>
+                </article>
+                <article class="figure-3 figure">
+                    <figure class="figure-form-1 form"></figure>
+                    <figure class="figure-form-2 form"></figure>
+                    <figure class="figure-form-3 form"></figure>
+                </article>
+            </div>
+            <h1 class="title-text">CONTACTO</h1>
+        </section>
+        <p class="buttons-text">Si desea comunicarse con nosotros marcar al <br /> siguiente número: 777 804 9132</p>
+        <section class="buttons">
+            <article class="buttons-button">
+                <a class="buttons-button-anchor" href="https://api.whatsapp.com/send?phone=+527778049130&text=Hola, vi la sección de contacto en su sitio web y requiero información de la residencia." class="button-anchor">
+                    <img class="buttons-button-anchor-image" src="./assets/whatsapp-icon.svg" alt="click para contactarnos via Whatsapp" class="button-anchor-image">
+                </a>
+                <p class="button-text">WhatsApp</p>
+            </article>
+            <article class="buttons-button">
+                <a class="buttons-button-anchor" href="mailto:informes@eishel.org?cc=informes@eishel.mx&subject=Eishel%3A%20Solicitud%20de%20informaci%C3%B3n%20v%C3%ADa%20web&body=Hola%2C%20quisiera%20informaci%C3%B3n%20de%20la%20residencia%20para%20(indique%20nombre%20a%20continuaci%C3%B3n)%3A%0D%0A-------%0D%0ADatos%20de%20contacto%20a%20continuaci%C3%B3n%0D%0A%0D%0ANombre%20y%20apellidos%3A%0D%0A%0D%0ATel%C3%A9fono%20celular%20o%20principal%3A%0D%0A%0D%0ACorreo%20electr%C3%B3nico%3A%0D%0A%0D%0ALugar%20de%20residencia%3A%0D%0A%0D%0AComentarios%20u%20observaciones%20de%20la%20solicitud%3A" class="button-anchor">
+                    <img class="buttons-button-anchor-image" src="./assets/email-icon.svg" alt="Clic para enviar solicitud de información por correo electrónico" class="button-anchor-image">
+                </a>
+                <p class="button-text">Email</p>
+            </article>
+            <article class="buttons-button">
+                <a class="buttons-button-anchor" href="https://www.facebook.com/EishelNuestroHogar" class="button-anchor">
+                    <img class="buttons-button-anchor-image" src="./assets/facebook-icon.svg" alt="Icono de contacto via facebook" class="button-anchor-image">
+                </a>
+                <p class="button-text">Facebook</p>
+            </article>
+        </section>
+        <section class="map">
+            <article class="map-container">
+                <figure class="map-tab"></figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.988242387034!2d-99.23905848462992!3d18.931914561404213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdde4af58e7edf%3A0x303c8eb138139c8b!2sEishel%20Nuestro%20Hogar!5e0!3m2!1ses!2smx!4v1652384707626!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-maps"></iframe>
+            </article>
+            <div class="map-text">
+                <h3 class="map-text-title">Dirección</h3>
+                <p class="map-text-paragraph">Calle Francisco I. Madero 402,</p>
+                <p class="map-text-paragraph">Miraval, 62270 Cuernavaca, Morelos</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-paragraph">CONTACTO</p>
+        <article class="footer-direction">
+            <a class="footer-direction-anchor" href="https://goo.gl/maps/P869gwWPdsUtx6Za7"><img src="../assets/icon/ubication-icon.svg" alt="Icono de ubicación en Google Maps"></a>
+            <p class="footer-direction-paragraph">Calle Francisco I. Madero 402, Miraval, 62270 Cuernavaca, Morelos.</p>
+        </article>
+        <article class="footer-phone">
+            <a class="footer-phone-anchor" href="tel: 777 804 91 32"> <img src="./assets/icon/small-phone-icon.svg" alt="Llamar al teléfono icono"></a>
+            <p class="footer-phone-paragraph">777 804 91 32</p>
+        </article>
+        <article class="footer-privacy">
+            <a class="footer-privacy-anchor" href="../AVISO.HTML" alt="Consulte nuestro aviso de privacidad vigente.">
+                <p class="footer-privacy-anchor-paragraph">AVISO DE PRIVACIDAD</p>
+            </a>
+        </article>
+    </footer>
+
+    <menu class="bottomMenu">
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://api.whatsapp.com/send?phone=+527778049130&text=Hola, vi su sitio web y deseo informes de Esihel">
+                <img class="menu-icon--whatsapp" src="../assets/icon/whatsapp-icon.svg" alt="Contactar via Whatsapp icono">
+            </a>
+            <span class="bottomMenu-article-text">Whatsapp</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="#">
+                <img class="menu-icon--email" src="../assets/icon/messenger-icon.svg" alt="Contactar via Facebook Messenger icono">
+            </a>
+            <span class="bottomMenu-article-text">Messenger</span>
+        </article>
+        <article class="bottomMenu-article">
+            <a class="bottomMenu-article-option" href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=BQPH8UGV2JGBG&source=url" target="_blank">
+                <img class="menu-icon--donations" src="../assets/icon/donations-menu-icon.png" alt="Realizar donativo via PayPal icono">
+            </a>
+            <span class="bottomMenu-article-text">Donaciones</span>
+        </article>
+    </menu>
+
+    <script src="./index-menu/header-menu.js"></script>
+    <script src="./script.js"></script>
+</body>-->
+</html>

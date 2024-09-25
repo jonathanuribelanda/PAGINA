@@ -1,0 +1,384 @@
+.title {
+    height: 24vw;
+    width: 100%;
+}
+.title-figure-container {
+    display: flex;
+    justify-content: center;
+}
+.figure {
+    position: relative;
+    width: 32%;
+    height: auto;
+
+    animation: widthChange 2000ms 1;
+}
+@keyframes widthChange {
+    0%{width: 0px;}
+}
+.form {
+    background-color: #BFD7EA5E;
+    width: 14.93vw;
+}
+.figure-form-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20.26vw;
+}
+.figure-form-2 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 7.466666666666667vw);
+    height: 22.93vw;
+}
+.figure-form-3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 20.26vw;
+}
+.title-text {
+    position: relative;
+    top: calc(50% - 22px);
+    z-index: 2;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--outer-space-crayola);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+}
+.buttons-text {
+    width: 90vw;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 22.99px;
+    font-weight: 400;
+    font-family: 'Gelasio';
+}
+.buttons-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 175px;
+}
+.button-text {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: 'Gelasio';
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 380px;
+    background-color: #DDE8F180;
+}
+.map-container {
+    position: relative;
+    width: 225px;
+    height: 220px;
+}
+.map-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 160px;
+    height: 175px;
+    background-color: var(--outer-space-crayola);
+}
+.map-maps {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 210px;
+    height: 210px;
+}
+.map-text-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Gelasio';
+}
+.map-text-paragraph {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 1280px) {
+    .title {
+        height: 200px;
+    }
+    .figure-form-1 {
+        height: 200px;
+    }
+    .figure-form-2 {
+        height: 230px;
+    }
+    .figure-form-3 {
+        height: 200px;
+    }
+    .title-text {
+        top: calc(50% - 48.5px);
+        font-size: 8rem;
+    }
+
+    .buttons-text {
+        margin-top: 70px;
+        font-size: 4rem;
+        line-height: 47px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        height: 450px;
+    }
+    .buttons-button {
+        height: auto;
+    }
+    .buttons-button-anchor-image {
+        width: 320px;
+    }
+    .button-text {
+        font-size: 4.8rem;
+    }
+
+    .map {
+        height: 650px;
+    }
+    .map-container {
+        width: 405px;
+        height: 405px;
+    }
+    .map-tab {
+        width: 300px;
+        height: 300px;
+    }
+    .map-maps {
+        width: 380px;
+        height: 380px;
+    }
+    .map-text-title {
+        font-size: 4.8rem;
+    }
+    .map-text-paragraph {
+        font-size: 2.8rem;
+    }
+}
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        width: 1280px;
+    }
+    .buttons {
+        width: 1280px;
+    }
+    .map {
+        width: 1280px;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+/* Estilos del formulario */
+
+.form-title {
+    text-align: center; /* Centrar el texto del título */
+    font-size: 2.5em;   /* Ajusta el tamaño del texto según sea necesario */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Negrita para el título */
+}
+
+.form-container {
+    width: 95%;           /* Ancho del formulario en pantallas grandes */
+    max-width: 1000px;    /* Ancho máximo del formulario en pantallas grandes */
+    margin: 50px auto;    /* Centrado del formulario y margen superior */
+    padding: 20px;
+    border: 2px solid #bfd7ea;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
+/* Espacio entre los elementos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo de los labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.6em;  /* Tamaño del texto de las etiquetas */
+}
+
+/* Estilo de los inputs, select y textarea */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5em;  /* Tamaño de letra de los campos */
+}
+
+/* Estilo para los mensajes de error */
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Estilo del mensaje de estado (enviado correctamente) */
+#statusMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 2em;  /* Ajuste para hacer el mensaje más grande */
+    text-align: center; /* Centrar el texto del mensaje */
+    color: green;       /* Color verde para el mensaje */
+}
+
+/* Estilo del botón de envío */
+button {
+   background-color: #69BC28;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Hacer que el botón se comporte como un bloque */
+    margin: 20px auto; /* Centrará el botón horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado dentro del botón */
+    font-size: 1.1em;  /* Tamaño de la letra del botón */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #58a620;
+}
+
+/* Hacer el formulario responsivo */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    label, input, select, textarea {
+        font-size: 0.95em;  /* Ajuste del tamaño de fuente en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 1em;  /* Ajuste del tamaño del botón en pantallas pequeñas */
+    }
+}
+
+/* Ajustes para dispositivos aún más pequeños */
+@media (max-width: 480px) {
+    .form-container {
+        margin: 20px auto; /* Margen superior más pequeño */
+    }
+
+    label, input, select, textarea {
+        font-size: 0.9em;  /* Ajuste del tamaño de fuente en móviles */
+    }
+
+    #statusMessage {
+        font-size: 1.8em;  /* Ajuste para el mensaje de éxito en móviles */
+    }
+
+    button {
+        font-size: 0.95em;  /* Ajuste del tamaño del botón en móviles */
+    }
+}
+
+
+
+
+
+/* Aseguramos que el cuerpo y el html cubran el 100% de la pantalla */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Contenedor para centrar la imagen y el texto */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 100px); /* Mantiene altura ajustada para mejor centrado */
+    text-align: center;
+    margin-top: 50px; /* Margen superior para mover un poco hacia abajo */
+}
+
+/* Centrado del contenido de imagen y texto */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;  /* Para evitar desbordamientos */
+}
+
+/* Imagen */
+.centered-image {
+    max-width: 190px; /* Tamaño ajustado proporcional al texto */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Línea de separación */
+.separator-line {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-top: 2px solid #003366;
+    margin: 20px 0;
+}
+
+/* Texto centrado con aumento de tamaño */
+.centered-text {
+    font-size: 2.9em; /* Aumentar más el tamaño del texto */
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 2em; /* Ajuste para móvil, un poco más grande */
+    }
+
+    .centered-image {
+        max-width: 120px; /* Ajuste de tamaño de la imagen en móvil */
+    }
+}
